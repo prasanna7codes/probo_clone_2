@@ -1,4 +1,4 @@
-import NextAuth from "next-auth";
+{/*import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import dbConnect from "../../../../lib/dbConnect";
 import {UserModel} from "../../../models/User";
@@ -76,3 +76,4 @@ const handler = NextAuth({
 
 // Required exports for Next.js App Router
 export { handler as GET, handler as POST };
+*/}
