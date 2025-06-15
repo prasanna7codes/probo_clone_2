@@ -39,10 +39,17 @@ export default function Signup (){
 
 
 
-    }catch(error:any){
-        alert("Signup failed: " + error.message);
-
+    }catch (err: any) {
+      if (err.response?.status === 409) {
+        alert(" User already exists!");
+      } else if (err.response?.status === 400) {
+        alert(" Please fill all fields.");
+      } else {
+        alert(" Signup failed. Try again.");
+      }
+      console.error("Signup error:", err);
     }
+  
 
     }
 
